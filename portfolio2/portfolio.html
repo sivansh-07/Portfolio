@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Singh — Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0a1225;
+            color: #e2eaff;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-box {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #7b5fff, #00d4ff);
+            font-size: 22px;
+            border-radius: 12px;
+            font-weight: 700;
+            color: white;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #cdd8ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* HERO */
+        .hero {
+            margin: 60px 8%;
+            background: rgba(255, 255, 255, 0.04);
+            padding: 40px;
+            border-radius: 14px;
+        }
+
+        .hero h2 span {
+            color: #9cabff;
+        }
+
+        .hero-btns {
+            margin: 25px 0;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            display: inline-block;
+            background: linear-gradient(90deg, #6c5bff, #00d8ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .location {
+            margin-top: 18px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* QUICK INFO */
+        .quick-info {
+            background: rgba(255, 255, 255, 0.04);
+            margin: 20px 8%;
+            padding: 28px;
+            border-radius: 12px;
+        }
+
+        /* SKILLS */
+        .skills {
+            margin: 70px 8%;
+        }
+
+        .skill-tags span {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px 16px;
+            margin: 6px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        /* PROJECTS */
+        .projects {
+            margin: 70px 8%;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            margin-top: 18px;
+            padding: 28px;
+            border-radius: 12px;
+        }
+
+        .project-card .small {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+        .contact {
+            margin: 80px 8%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .submit {
+            background: linear-gradient(90deg, #6c5bff, #00d8ff);
+            cursor: pointer;
+            border: none;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding-top: 50px;
+            opacity: 0.6;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 830px) {
+            nav {
+                display: none;
+            }
+            .navbar {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-box">S</div>
+        <span>Shivansh Singh</span>
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <h2>Hi — I'm <span>Shivansh Singh</span></h2>
+        <p>I build clean, accessible interfaces and delightful web experiences using HTML & CSS. I love turning ideas into polished, responsive single-page websites.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn">View projects</a>
+            <a href="#contact" class="btn">Contact me</a>
+        </div>
+
+        <p class="location">📍 Based in India • Open to freelance & remote work</p>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <h3>Quick Info</h3>
+        <p>Available for hire • Open to collaboration • Prefer frontend roles</p>
+        <p class="follow">Follow:
+            <a href="#">GitHub</a> •
+            <a href="#">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive Design</span>
+            <span>Flexbox & Grid</span>
+            <span>Accessibility</span>
+            <span>Design Systems</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Selected Projects</h2>
+
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>Single-page landing built with CSS grid and responsive breakpoints.</p>
+            <a href="#" class="btn small">Live</a>
+            <a href="#" class="btn small">Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>UI component library built using only HTML & CSS (no JS).</p>
+            <a href="#" class="btn small">Live</a>
+            <a href="#" class="btn small">Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project Three</h3>
+            <p>Portfolio template with hover animations and accessible markup.</p>
+            <a href="#" class="btn small">Live</a>
+            <a href="#" class="btn small">Code</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Want to work together? Send a quick message.</p>
+        <form>
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+            <button class="btn submit">Send email</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    © Shivansh Singh • Built with using HTML & CSS
+</footer>
+
+</body>
+</html>
